@@ -24,12 +24,12 @@ def posicionar_diagonal_esquerda(x, y, tamanho):
         tabuleiro[y + i][x - i] = 3
 
 # Posiciona os quatro navios
-posicionar_horizontal(2, 1, 4)         # Navio horizontal
+posicionar_horizontal(6, 7, 4)         # Navio horizontal
 posicionar_vertical(5, 3, 3)           # Navio vertical
 posicionar_diagonal_direita(0, 0, 3)   # Navio diagonal ↘
 posicionar_diagonal_esquerda(6, 0, 3)  # Navio diagonal ↙
 
 # Exibe o tabuleiro completo
-print("Tabuleiro Batalha Naval (0 = vazio, 3 = navio):\n")
+print("Tabuleiro Batalha Naval (0 = vazio, 1 = navio):\n")
 for linha in tabuleiro:
     print(" ".join(str(celula) for celula in linha))
